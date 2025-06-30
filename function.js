@@ -31,3 +31,13 @@ const reverseWords=str => str.split(' ')
 .join(' ');
 let str = "i am busy"
 console.log(reverseString(str))
+
+
+function findAverage(array) {
+    if(array.length === 0){
+        return 0;
+    }
+    const sum = array.reduce((accumulator, currentValue)=> accumulator + currentValue, 0);
+    return sum / array.length
+}
+console.log(findAverage([1,2,3,4]))
