@@ -22,4 +22,12 @@ console.log(strlengthEven("hello"))
 function findRabbit(arr){
     return arr.indexOf("rabbit")
 }
-console.log(findRabbit(["got","bird","rabbit","dag","cat"]))
+console.log(findRabbit(["got","bird","rabbit","dag","cat"]));
+
+
+const reverseWords=str => str.split(' ')
+.map(word => word.split('').reverse().join(''))
+.reverse()
+.join(' ');
+let str = "i am busy"
+console.log(reverseString(str))
