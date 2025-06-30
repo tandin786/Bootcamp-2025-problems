@@ -19,3 +19,7 @@ function strlengthEven(str){
 console.log(strlengthEven("hello"))
 
 
+function findRabbit(arr){
+    return arr.indexOf("rabbit")
+}
+console.log(findRabbit(["got","bird","rabbit","dag","cat"]))
