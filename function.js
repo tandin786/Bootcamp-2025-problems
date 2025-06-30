@@ -56,3 +56,15 @@ function bmi(weight, height) {
 }
 }
 console.log(bmi(80 ,1.80))
+
+var countSheep = function (num){
+if(num === 0){
+    return "";
+}
+let result = ""
+for(let i = 1; i <= num; i++){
+result += `${i} sheep...`
+}
+return result;
+}
+console.log(countSheep(2))
