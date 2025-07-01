@@ -99,3 +99,12 @@ console.log(longest("xyaabbbccccdefww","xxxxyyyyabklmopq"))
 
 const stringToArray = (string) => string.split(' ')
 console.log(stringToArray("I am shadow strom"))
+
+function countBy(x, n) {
+  let z = [];
+  for(let i = 1; i <= n; i++){
+    z.push(x * i)
+  }
+  return z;
+}
+console.log(countBy(2,5))
