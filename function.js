@@ -58,13 +58,23 @@ function bmi(weight, height) {
 console.log(bmi(80 ,1.80))
 
 var countSheep = function (num){
-if(num === 0){
-    return "";
-}
 let result = ""
 for(let i = 1; i <= num; i++){
-result += `${i} sheep...`
+result += i + " sheep..."
 }
 return result;
 }
-console.log(countSheep(2))
+console.log(countSheep(3))
+
+
+function isIsogram (str){
+    lowerstr = str.toLowerCase();
+    let arr = lowerstr.split('');
+    let letter = new Set(arr);
+    if(letter.size === str.length){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(isIsogram("abcdef"))
