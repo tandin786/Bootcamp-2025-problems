@@ -108,3 +108,18 @@ function countBy(x, n) {
   return z;
 }
 console.log(countBy(2,5))
+
+function XO(str) {
+  let lowercase = str.toLowerCase();
+  let Xcount = 0;
+  let Ocount = 0;
+  for(let i = 0;i < lowercase.length; i++){
+    if(lowercase[i] === 'x'){
+        Xcount = Xcount + 1
+    }else if(lowercase[i]==='o'){
+        Ocount = Ocount + 1
+    }
+  }
+  return Xcount===Ocount
+}
+console.log(XO("xox"))
