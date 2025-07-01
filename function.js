@@ -95,3 +95,7 @@ return result
 }
 
 console.log(longest("xyaabbbccccdefww","xxxxyyyyabklmopq"))
+
+
+const stringToArray = (string) => string.split(' ')
+console.log(stringToArray("I am shadow strom"))
