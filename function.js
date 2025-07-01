@@ -84,3 +84,14 @@ function past(h,m,s){
     return h * 3600000 + m * 60000 + s * 1000;
 }
 console.log(past(1,1,1))
+
+function longest(s1, s2) {
+let combine = s1 + s2
+let arr = combine.split('')
+let sorted = arr.sort()
+let single = new Set(sorted)
+let result = [...single].join('')
+return result
+}
+
+console.log(longest("xyaabbbccccdefww","xxxxyyyyabklmopq"))
