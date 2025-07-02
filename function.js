@@ -138,3 +138,14 @@ const rps = (p1, p2) => {
   }
 };
 console.log(rps("paper", "scissors"))
+
+
+function sumArray(array) {
+let higest = Math.max(...array)
+let lowest = Math.min(...array)
+let sum = array.reduce((accumulator,currentValue) => accumulator+currentValue,0)
+let result = sum - higest - lowest
+return result
+
+}
+console.log(sumArray([2,1,3,5,6,10,9]))
