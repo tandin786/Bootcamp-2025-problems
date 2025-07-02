@@ -149,3 +149,19 @@ return result
 
 }
 console.log(sumArray([2,1,3,5,6,10,9]))
+
+
+
+function digPow(n, p){
+let num = n.toString().split('').map(Number)
+let result = 0
+for(let i = 0; i < num.length;i++){
+    result = result + Math.pow(num[i],p + i)
+}
+if(result % n === 0 ){
+return result / n;
+}else{
+  return -1;  
+}
+}
+console.log(digPow(46288,3))
